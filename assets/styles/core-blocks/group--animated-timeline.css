@@ -1,0 +1,150 @@
+/* Establish the positioning context for the timeline. */
+.animated-timeline > div {
+	position: relative;
+}
+
+.animated__item {
+	visibility: hidden;
+}
+
+.animated__item.loaded {
+	visibility: visible;
+}
+
+/* First column - initial state */
+.animated-timeline .animated__item--first {
+	opacity: 0;
+	transform: translateY(25px);
+	transition: transform 0.5s, opacity 0.5s;
+	transition-delay: 0.3s;
+}
+
+/* Last column - initial state */
+.animated-timeline .animated__item--last {
+	opacity: 0;
+	transform: translateY(45px);
+	transition: transform 0.7s, opacity 0.8s;
+	transition-delay: 0.5s;
+}
+
+/* First and last column - loaded state */
+.animated-timeline .animated__item--first.loaded,
+.animated-timeline .animated__item--last.loaded {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/**
+ * Vertical line animation
+ * The vertical line is a pseudo-element of the middle column.
+ */
+
+/* Establish positioning context */
+.animated-timeline .animated__item--line {
+	position: relative;
+	visibility: hidden;
+}
+
+/* Vertical line - initial state */
+.animated-timeline .animated__item--line::before {
+	background-color: inherit;
+	content: "";
+	display: block;
+	height: 1px;
+	inset: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	transition: height 1.5s, opacity 0.1s;
+	transition-delay: 0.1s;
+	transition-origin: top;
+	visibility: hidden;
+	width: 100%;
+	z-index: -1;
+}
+
+/* Vertical line - loaded state */
+.animated-timeline .animated__item--line.loaded::before {
+	height: 100%;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Middle column - inner text - initial state */
+.animated-timeline .animated__item--line > p {
+	opacity: 0;
+	transition: opacity 0.5s;
+	transition-delay: 1.15s;
+	visibility: hidden;
+}
+
+/* Middle column - inner text - loaded state */
+.animated-timeline:not(.animated-timeline--circles) .animated__item--line.loaded > p {
+	opacity: 1;
+	visibility: visible;
+}
+
+/**
+ * Circle timeline
+ * The circle timeline is a variation of the default timeline.
+ */
+.animated-timeline--circles .animated__item--line > p {
+	opacity: 1;
+	position: relative;
+	visibility: hidden;
+}
+
+/* Create the circles */
+.animated-timeline--circles .animated__item--line > p::after,
+.animated-timeline--circles .animated__item--line > p::before {
+	background-color: inherit;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 1rem;
+	left: calc(50% - 0.5rem);
+	opacity: 0;
+	position: absolute;
+	top: calc(50% - 0.5rem);
+	transition: opacity 0.4s, transform 0.6s;
+	visibility: hidden;
+	width: 1rem;
+}
+
+/* Background circle - initial state */
+.animated-timeline--circles .animated__item--line > p::after {
+	background: none;
+	box-shadow: 0 0 0 4px currentColor;
+	transform: scale(0);
+	transition-delay: 1.2s;
+	z-index: 1;
+}
+
+/* Background circle - loaded state */
+.animated-timeline--circles .animated__item--line.loaded > p::after {
+	opacity: 0.4;
+	transform: scale(1);
+	visibility: visible;
+}
+
+/* Foreground circle - initial state */
+.animated-timeline--circles .animated__item--line > p::before {
+	transition-delay: 1s;
+	z-index: 2;
+}
+
+/* Foreground circle - loaded state */
+.animated-timeline--circles .animated__item--line.loaded > p::before {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.animated-timeline *,
+	.animated-timeline *::after,
+	.animated-timeline *::before {
+		opacity: 1 !important;
+		transition: none !important;
+		visibility: visible !important;
+	}
+}
