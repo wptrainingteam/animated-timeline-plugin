@@ -18,9 +18,6 @@
 			"step": "login"
 		},
 		{
-			"step": "resetData"
-		},
-		{
 			"step": "installPlugin",
 			"pluginZipFile": {
 				"resource": "url",
