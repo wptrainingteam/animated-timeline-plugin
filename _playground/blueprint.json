@@ -53,6 +53,10 @@
 		{
 			"step": "wp-cli",
 			"command": "wp post create --post_title='History of WordPress major releases' --post_status='published' /wordpress/wp-content/post-content.md"
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp post delete 2 3"
 		}
 	]
 }
