@@ -12,6 +12,7 @@
 	"features": {
 		"networking": true
 	},
+	"landingPage": "/?p=4",
 	"steps": [
 		{
 			"step": "login"
