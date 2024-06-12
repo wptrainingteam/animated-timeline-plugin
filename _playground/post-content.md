@@ -28,7 +28,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"width":"500px","aspectRatio":"4/3","scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|duotone-1"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="../wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.5-Regina.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.5-Regina.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -62,7 +62,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"width":"500px","aspectRatio":"4/3","scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|duotone-1"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="../wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.4-Shirley.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.4-Shirley.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -96,7 +96,7 @@
 <!-- /wp:group -->
 
 <!-- wp:image {"width":"500px","aspectRatio":"4/3","scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|duotone-1"}}} -->
-<figure class="wp-block-image size-full is-resized"><img src="../wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.3-Lionel.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="/wordpress/wp-content/plugins/animated-timeline/assets/images/WP-6.3-Lionel.png" alt="" style="aspect-ratio:4/3;object-fit:contain;width:500px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
