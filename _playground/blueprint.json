@@ -21,11 +21,6 @@
 			"step": "resetData"
 		},
 		{
-			"step": "writeFile",
-			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
-			"data": "<?php add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
-		},
-		{
 			"step": "installPlugin",
 			"pluginZipFile": {
 				"resource": "url",
@@ -44,6 +39,11 @@
 			"options": {
 				"activate": true
 			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
+			"data": "<?php add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
 		},
 		{
 			"step": "writeFile",
