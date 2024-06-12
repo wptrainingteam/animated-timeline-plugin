@@ -27,8 +27,26 @@
 			}
 		},
 		{
-			"step": "runPHP",
-			"code": "<?php require '/wordpress/wp-load.php'; $wpdb->query('delete from wp_posts');"
+			"step": "installTheme",
+			"themeZipFile": {
+				"resource": "wordpress.org/themes",
+				"slug": "dawson"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/post-content.md",
+			"data": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/_playground/post-content.md"
+			}
+		},
+		{
+			"step": "wp-cli",
+			"command": "wp post create --post_title='History of WordPress major releases' --post_status='published' /wordpress/wp-content/post-content.md"
 		}
 	]
 }
