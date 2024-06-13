@@ -27,7 +27,7 @@
 			"step": "installPlugin",
 			"pluginZipFile": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/_playground/animated-timeline-plugin-v1.0.0.zip"
+				"url": "https://github.com/wptrainingteam/animated-timeline-plugin/releases/download/v1.0.0/animated-timeline.zip"
 			},
 			"options": {
 				"activate": true
@@ -54,30 +54,6 @@
 			"data": {
 				"resource": "url",
 				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/_playground/post-content.md"
-			}
-		},
-		{
-			"step": "writeFile",
-			"path": "/wordpress/wp-content/WP-6.3-Lionel.png",
-			"data": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/assets/images/WP-6.3-Lionel.png"
-			}
-		},
-		{
-			"step": "writeFile",
-			"path": "/wordpress/wp-content/WP-6.4-Shirley.png",
-			"data": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/assets/images/WP-6.4-Shirley.png"
-			}
-		},
-		{
-			"step": "writeFile",
-			"path": "/wordpress/wp-content/WP-6.5-Regina.png",
-			"data": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/animated-timeline-plugin/main/assets/images/WP-6.5-Regina.png"
 			}
 		},
 		{
