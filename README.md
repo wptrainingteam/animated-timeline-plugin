@@ -6,6 +6,8 @@ The final pattern is registered within the plugin, but it could also potentially
 
 There are two possible styling variations: `animated-timeline` and `animated-timeline animated-timeline--circles`.
 
+The accompanying post resides on the WordPress Developer Blog: [__How to create an animated timeline plugin__](https://developer.wordpress.org/news/2024/06/13/how-to-create-an-animated-timeline-plugin/).
+
 ## How to use
 
 1. Download this plugin as a zip (click on 'Code' and choose 'Download ZIP')
